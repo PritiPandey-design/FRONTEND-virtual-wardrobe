@@ -1,4 +1,4 @@
-# Virtual Wardrobe Try-On & Shopping Platform  
+# Virtual Wardrobe Try-On 
 
 This is an interactive **virtual wardrobe try-on website** that combines **augmented reality (AR)** with a **shopping experience**. Users can preview outfits using **AR.js** and a **3D model**  
 
