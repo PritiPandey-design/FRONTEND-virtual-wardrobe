@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Outfit Try-On</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.1/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+
+    <a-scene embedded arjs>
+        <!-- Camera setup -->
+        <a-marker preset="hiro">
+            <!-- Outfit Model to be displayed in AR -->
+            <a-entity position="0 0 0" scale="1 1 1" gltf-model="#outfitModel"></a-entity>
+        </a-marker>
+
+        <!-- Simple background grid -->
+        <a-entity camera></a-entity>
+    </a-scene>
+
+    <!-- Model asset definition -->
+    <a-assets>
+        <!-- Path to your JPEG image -->
+        <img id="file:///C:/Users/Priti/Downloads/hoodie_01.png" src="" />
+    </a-assets>
+    
+    <a-marker preset="hiro">
+        <!-- Outfit Image on a Plane -->
+        <a-plane src="#outfitImage" position="0 0 0" width="1" height="1.5"></a-plane>
+    </a-marker>
+    
+
+    <footer>
+        <p>&copy; 2023 My College Project. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // JavaScript to handle interactions and AR
+        function tryOnAR() {
+            // Here, we simply switch to the AR scene
+            alert('Opening AR view...');
+            document.querySelector('a-scene').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

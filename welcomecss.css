@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-container {
+    background-image: url('file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/virtual%20try%20on.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.arrow-button {
+    margin-top: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}

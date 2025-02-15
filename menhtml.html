@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Outfits</title>
+    <link rel="stylesheet" href="C:\Users\Priti\OneDrive\mini project final\men css.css">
+</head>
+<body>
+    <header>
+        <h1>Men's Collection</h1>
+        <p>Welcome to the men's section. Here you'll find a variety of clothing and accessories.</p>
+    </header>
+    
+    <main>
+        <div class="outfits-container">
+            <!-- Outfit 1 -->
+            <div class="outfit">
+                <img src="file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/images%20(1).jpg" alt="Outfit 1">
+                <button class="try-on-btn" onclick="showTryOnOptions('outfit1')">Try On</button>
+            </div>
+            <!-- Outfit 2 -->
+            <div class="outfit">
+                <img src="file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/hoodie_01.jpg" alt="Outfit 2">
+                <button class="try-on-btn" onclick="showTryOnOptions('outfit2')">Try On</button>
+            </div>
+            <!-- Outfit 3 -->
+            <div class="outfit">
+                <img src="file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/images%20(2).jpg" alt="Outfit 3">
+                <button class="try-on-btn" onclick="showTryOnOptions('outfit3')">Try On</button>
+            </div>
+            <!-- Outfit 4 -->
+            <div class="outfit">
+                <img src="file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/searchimage.jpg" alt="Outfit 4">
+                <button class="try-on-btn" onclick="showTryOnOptions('outfit4')">Try On</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My College Project. All rights reserved.</p>
+            <ul>
+                <li><a href="C:\Users\Priti\OneDrive\mini project final\mainhtml.html">Home</a></li>
+                <li><a href="C:\Users\Priti\OneDrive\mini project final\aboutus.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </footer>
+
+    <!-- Modal for Try On Options -->
+    <div id="tryOnModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Choose Try On Method</h2>
+            <button class="option-btn" onclick="tryOn3D()">3D Model</button>
+            <a href="C:\Users\Priti\OneDrive\mini project final\ar.html" target="_blank">
+                <button class="option-btn">AR</button>
+            </a>
+        </div>
+    </div>
+    
+
+    <script src="C:\Users\Priti\OneDrive\mini project final\men.js"></script>
+</body>
+</html>

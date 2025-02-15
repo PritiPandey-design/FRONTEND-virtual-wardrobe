@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('file:///C:/Users/Priti/Desktop/presentation%20mini%20project%202024/WhatsApp%20Image%202025-01-04%20at%2015.12.46_6560b8d4.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center -350px; /* Moves the image 50px upward */
+
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    opacity: 0.9; /* Transparent background with a light overlay */    
+    color: rgb(231, 222, 222); /* Ensures readability of text over background */
+}
+/* Header Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent header */
+    color: white;
+    padding: 5px 10px; /* Reduced padding for a slimmer header */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for elevation */
+    height: 50px; /* Reduced header height */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icon,
+.avatar-icon {
+    cursor: pointer;
+    font-size: 20px; /* Reduced icon size */
+    margin-right: 15px;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex; /* Align options side by side */
+    justify-content: center; /* Center the options */
+    padding: 20px 0; /* Padding for vertical spacing */
+}
+
+.option {
+    color: white; /* White text color */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.option:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes the list items display side by side */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+footer ul li {
+    display: inline; /* Keeps list items inline */
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px; /* Adds padding to make the clickable area larger */
+}
+
+/* Optional hover effect for footer links */
+footer ul li a:hover {
+    text-decoration: underline;
+}
